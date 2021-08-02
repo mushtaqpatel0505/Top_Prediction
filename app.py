@@ -44,7 +44,7 @@ def predict():
 
     df['s'] = np.log(df['s'])
     df['t'] = np.log(df['t'])
-
+    df = df[['s','t']]
 
     prediction = cb_model.predict(df)
     if prediction[0]>0.99:
