@@ -23,7 +23,7 @@ def predict():
     final_features = [np.array(int_features)]
     prediction = model.predict(final_features, num_iteration=model.best_iteration)
 
-    output = prediction[0]
+    output = prediction
 
     return render_template('index.html', prediction_text='Prediction of top is : {}'.format(output))
 
