@@ -3,6 +3,7 @@ import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
 import lightgbm as lgb
+import pandas as pd
 
 #Initialize the flask App
 app = Flask(__name__)
